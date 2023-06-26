@@ -26,9 +26,20 @@ public class Toy {
 
     @Override
     public String toString() {
-        return "Игрушка: \n" +
-                "id: " + this.id + "\n" +
-                "Наименование: " + this.title + "\n" +
-                "Вес: " +  this.weight;
+        return this.id +
+                " " + this.title +
+                " " + "Вес: " +  this.weight;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 }
