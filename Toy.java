@@ -23,4 +23,12 @@ public class Toy {
     public int hashCode() {
         return Objects.hash(id, title);
     }
+
+    @Override
+    public String toString() {
+        return "Игрушка: \n" +
+                "id: " + this.id + "\n" +
+                "Наименование: " + this.title + "\n" +
+                "Вес: " +  this.weight;
+    }
 }
