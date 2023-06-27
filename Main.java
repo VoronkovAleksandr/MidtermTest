@@ -5,7 +5,15 @@ public class Main {
         toys.addToy(1, 2, "Верблюд");
         toys.addToy(2,2,"Конструктор");
         toys.addToy(3, 6, "Робот");
+        toys.addToy(4,10,"Самокат");
 
-        System.out.println(toys.getToysToString());
+        Raffle raffle = new Raffle(toys);
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < 20; i++) {
+            raffle.start();
+            sb.append(raffle.getWinning());
+            sb.append("\n");
+        }
+        System.out.println(sb.toString());
     }
 }

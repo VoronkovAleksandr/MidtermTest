@@ -31,4 +31,8 @@ public class Toys {
         return toys;
     }
 
+    public int size(){
+        return toys.size();
+    }
+
 }
